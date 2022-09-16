@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F07FD3A528D4FD3F001DDDE3 /* Project_Register_UniparApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3A428D4FD3F001DDDE3 /* Project_Register_UniparApp.swift */; };
+		F07FD3A728D4FD3F001DDDE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3A628D4FD3F001DDDE3 /* ContentView.swift */; };
+		F07FD3A928D4FD3F001DDDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07FD3A828D4FD3F001DDDE3 /* Assets.xcassets */; };
+		F07FD3AC28D4FD3F001DDDE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07FD3AB28D4FD3F001DDDE3 /* Preview Assets.xcassets */; };
+		F07FD3AE28D4FD3F001DDDE3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3AD28D4FD3F001DDDE3 /* Persistence.swift */; };
+		F07FD3B128D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3AF28D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodeld */; };
+		F07FD3BC28D4FD40001DDDE3 /* Project_Register_UniparTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3BB28D4FD40001DDDE3 /* Project_Register_UniparTests.swift */; };
+		F07FD3C628D4FD40001DDDE3 /* Project_Register_UniparUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3C528D4FD40001DDDE3 /* Project_Register_UniparUITests.swift */; };
+		F07FD3C828D4FD40001DDDE3 /* Project_Register_UniparUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FD3C728D4FD40001DDDE3 /* Project_Register_UniparUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F07FD3B828D4FD40001DDDE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F07FD39928D4FD3F001DDDE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F07FD3A028D4FD3F001DDDE3;
+			remoteInfo = "Project Register Unipar";
+		};
+		F07FD3C228D4FD40001DDDE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F07FD39928D4FD3F001DDDE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F07FD3A028D4FD3F001DDDE3;
+			remoteInfo = "Project Register Unipar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F07FD3A128D4FD3F001DDDE3 /* Project Register Unipar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Register Unipar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07FD3A428D4FD3F001DDDE3 /* Project_Register_UniparApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_Register_UniparApp.swift; sourceTree = "<group>"; };
+		F07FD3A628D4FD3F001DDDE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F07FD3A828D4FD3F001DDDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F07FD3AB28D4FD3F001DDDE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F07FD3AD28D4FD3F001DDDE3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F07FD3B028D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_Register_Unipar.xcdatamodel; sourceTree = "<group>"; };
+		F07FD3B228D4FD3F001DDDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07FD3B728D4FD40001DDDE3 /* Project Register UniparTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project Register UniparTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07FD3BB28D4FD40001DDDE3 /* Project_Register_UniparTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_Register_UniparTests.swift; sourceTree = "<group>"; };
+		F07FD3C128D4FD40001DDDE3 /* Project Register UniparUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project Register UniparUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07FD3C528D4FD40001DDDE3 /* Project_Register_UniparUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_Register_UniparUITests.swift; sourceTree = "<group>"; };
+		F07FD3C728D4FD40001DDDE3 /* Project_Register_UniparUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_Register_UniparUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F07FD39E28D4FD3F001DDDE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07FD3B428D4FD40001DDDE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07FD3BE28D4FD40001DDDE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F07FD39828D4FD3F001DDDE3 = {
+			isa = PBXGroup;
+			children = (
+				F07FD3A328D4FD3F001DDDE3 /* Project Register Unipar */,
+				F07FD3BA28D4FD40001DDDE3 /* Project Register UniparTests */,
+				F07FD3C428D4FD40001DDDE3 /* Project Register UniparUITests */,
+				F07FD3A228D4FD3F001DDDE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F07FD3A228D4FD3F001DDDE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F07FD3A128D4FD3F001DDDE3 /* Project Register Unipar.app */,
+				F07FD3B728D4FD40001DDDE3 /* Project Register UniparTests.xctest */,
+				F07FD3C128D4FD40001DDDE3 /* Project Register UniparUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F07FD3A328D4FD3F001DDDE3 /* Project Register Unipar */ = {
+			isa = PBXGroup;
+			children = (
+				F07FD3A428D4FD3F001DDDE3 /* Project_Register_UniparApp.swift */,
+				F07FD3A628D4FD3F001DDDE3 /* ContentView.swift */,
+				F07FD3A828D4FD3F001DDDE3 /* Assets.xcassets */,
+				F07FD3AD28D4FD3F001DDDE3 /* Persistence.swift */,
+				F07FD3B228D4FD3F001DDDE3 /* Info.plist */,
+				F07FD3AF28D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodeld */,
+				F07FD3AA28D4FD3F001DDDE3 /* Preview Content */,
+			);
+			path = "Project Register Unipar";
+			sourceTree = "<group>";
+		};
+		F07FD3AA28D4FD3F001DDDE3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F07FD3AB28D4FD3F001DDDE3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F07FD3BA28D4FD40001DDDE3 /* Project Register UniparTests */ = {
+			isa = PBXGroup;
+			children = (
+				F07FD3BB28D4FD40001DDDE3 /* Project_Register_UniparTests.swift */,
+			);
+			path = "Project Register UniparTests";
+			sourceTree = "<group>";
+		};
+		F07FD3C428D4FD40001DDDE3 /* Project Register UniparUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F07FD3C528D4FD40001DDDE3 /* Project_Register_UniparUITests.swift */,
+				F07FD3C728D4FD40001DDDE3 /* Project_Register_UniparUITestsLaunchTests.swift */,
+			);
+			path = "Project Register UniparUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F07FD3A028D4FD3F001DDDE3 /* Project Register Unipar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07FD3CB28D4FD40001DDDE3 /* Build configuration list for PBXNativeTarget "Project Register Unipar" */;
+			buildPhases = (
+				F07FD39D28D4FD3F001DDDE3 /* Sources */,
+				F07FD39E28D4FD3F001DDDE3 /* Frameworks */,
+				F07FD39F28D4FD3F001DDDE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project Register Unipar";
+			productName = "Project Register Unipar";
+			productReference = F07FD3A128D4FD3F001DDDE3 /* Project Register Unipar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F07FD3B628D4FD40001DDDE3 /* Project Register UniparTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07FD3CE28D4FD40001DDDE3 /* Build configuration list for PBXNativeTarget "Project Register UniparTests" */;
+			buildPhases = (
+				F07FD3B328D4FD40001DDDE3 /* Sources */,
+				F07FD3B428D4FD40001DDDE3 /* Frameworks */,
+				F07FD3B528D4FD40001DDDE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F07FD3B928D4FD40001DDDE3 /* PBXTargetDependency */,
+			);
+			name = "Project Register UniparTests";
+			productName = "Project Register UniparTests";
+			productReference = F07FD3B728D4FD40001DDDE3 /* Project Register UniparTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F07FD3C028D4FD40001DDDE3 /* Project Register UniparUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07FD3D128D4FD40001DDDE3 /* Build configuration list for PBXNativeTarget "Project Register UniparUITests" */;
+			buildPhases = (
+				F07FD3BD28D4FD40001DDDE3 /* Sources */,
+				F07FD3BE28D4FD40001DDDE3 /* Frameworks */,
+				F07FD3BF28D4FD40001DDDE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F07FD3C328D4FD40001DDDE3 /* PBXTargetDependency */,
+			);
+			name = "Project Register UniparUITests";
+			productName = "Project Register UniparUITests";
+			productReference = F07FD3C128D4FD40001DDDE3 /* Project Register UniparUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F07FD39928D4FD3F001DDDE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F07FD3A028D4FD3F001DDDE3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					F07FD3B628D4FD40001DDDE3 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F07FD3A028D4FD3F001DDDE3;
+					};
+					F07FD3C028D4FD40001DDDE3 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F07FD3A028D4FD3F001DDDE3;
+					};
+				};
+			};
+			buildConfigurationList = F07FD39C28D4FD3F001DDDE3 /* Build configuration list for PBXProject "Project Register Unipar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F07FD39828D4FD3F001DDDE3;
+			productRefGroup = F07FD3A228D4FD3F001DDDE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F07FD3A028D4FD3F001DDDE3 /* Project Register Unipar */,
+				F07FD3B628D4FD40001DDDE3 /* Project Register UniparTests */,
+				F07FD3C028D4FD40001DDDE3 /* Project Register UniparUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F07FD39F28D4FD3F001DDDE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07FD3AC28D4FD3F001DDDE3 /* Preview Assets.xcassets in Resources */,
+				F07FD3A928D4FD3F001DDDE3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07FD3B528D4FD40001DDDE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07FD3BF28D4FD40001DDDE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F07FD39D28D4FD3F001DDDE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07FD3AE28D4FD3F001DDDE3 /* Persistence.swift in Sources */,
+				F07FD3B128D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodeld in Sources */,
+				F07FD3A728D4FD3F001DDDE3 /* ContentView.swift in Sources */,
+				F07FD3A528D4FD3F001DDDE3 /* Project_Register_UniparApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07FD3B328D4FD40001DDDE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07FD3BC28D4FD40001DDDE3 /* Project_Register_UniparTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07FD3BD28D4FD40001DDDE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07FD3C828D4FD40001DDDE3 /* Project_Register_UniparUITestsLaunchTests.swift in Sources */,
+				F07FD3C628D4FD40001DDDE3 /* Project_Register_UniparUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F07FD3B928D4FD40001DDDE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F07FD3A028D4FD3F001DDDE3 /* Project Register Unipar */;
+			targetProxy = F07FD3B828D4FD40001DDDE3 /* PBXContainerItemProxy */;
+		};
+		F07FD3C328D4FD40001DDDE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F07FD3A028D4FD3F001DDDE3 /* Project Register Unipar */;
+			targetProxy = F07FD3C228D4FD40001DDDE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F07FD3C928D4FD40001DDDE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F07FD3CA28D4FD40001DDDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F07FD3CC28D4FD40001DDDE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Project Register Unipar/Preview Content\"";
+				DEVELOPMENT_TEAM = MBMQ7W76MF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.celiofs7.Project-Register-Unipar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F07FD3CD28D4FD40001DDDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Project Register Unipar/Preview Content\"";
+				DEVELOPMENT_TEAM = MBMQ7W76MF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.celiofs7.Project-Register-Unipar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F07FD3CF28D4FD40001DDDE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBMQ7W76MF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.celiofs7.Project-Register-UniparTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project Register Unipar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Project Register Unipar";
+			};
+			name = Debug;
+		};
+		F07FD3D028D4FD40001DDDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBMQ7W76MF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.celiofs7.Project-Register-UniparTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project Register Unipar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Project Register Unipar";
+			};
+			name = Release;
+		};
+		F07FD3D228D4FD40001DDDE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBMQ7W76MF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.celiofs7.Project-Register-UniparUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Project Register Unipar";
+			};
+			name = Debug;
+		};
+		F07FD3D328D4FD40001DDDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MBMQ7W76MF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.celiofs7.Project-Register-UniparUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Project Register Unipar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F07FD39C28D4FD3F001DDDE3 /* Build configuration list for PBXProject "Project Register Unipar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07FD3C928D4FD40001DDDE3 /* Debug */,
+				F07FD3CA28D4FD40001DDDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07FD3CB28D4FD40001DDDE3 /* Build configuration list for PBXNativeTarget "Project Register Unipar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07FD3CC28D4FD40001DDDE3 /* Debug */,
+				F07FD3CD28D4FD40001DDDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07FD3CE28D4FD40001DDDE3 /* Build configuration list for PBXNativeTarget "Project Register UniparTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07FD3CF28D4FD40001DDDE3 /* Debug */,
+				F07FD3D028D4FD40001DDDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07FD3D128D4FD40001DDDE3 /* Build configuration list for PBXNativeTarget "Project Register UniparUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07FD3D228D4FD40001DDDE3 /* Debug */,
+				F07FD3D328D4FD40001DDDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F07FD3AF28D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F07FD3B028D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodel */,
+			);
+			currentVersion = F07FD3B028D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodel */;
+			path = Project_Register_Unipar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F07FD39928D4FD3F001DDDE3 /* Project object */;
+}
