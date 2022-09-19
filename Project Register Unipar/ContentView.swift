@@ -7,82 +7,56 @@
 
 import SwiftUI
 import CoreData
+import Firebase
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+    
+    @StateObject var viewModel = BooksViewModel()
+    @State var presentAddBookSheet = false
+    
+    private var addButton: some View {
+        Button(action: {self.presentAddBookSheet.toggle()}) {
+            Image(systemName: "plus")
+        }
+    }
+    private func bookRowView(book: Book) -> some View {
+        NavigationLink(destination: BookDetailsView(book: book)) {
+            VStack(alignment: .leading){
+                HStack{
+//                    AnimatedImage(url: URL(string: book.image)!).resizable().frame(width: 65, heigth: 65).clipShape(Circle())
+                    VStack(alignment: .leading) {
+                        Text(book.title)
+                            .fontWeight(.bold)
+                        Text(book.author)
                     }
                 }
             }
-            Text("Select an item")
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    
+    
+    var body: some View{
+        NavigationView{
+            List{
+                ForEach(viewModel.books) {
+                    book in bookRowView(book: book)
+                    
+                }
             }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            .navigationBarTitle("Books")
+            .navigationBarItems(trailing: addButton)
+            .onAppear() {
+                print("BooksListeView appears. Subscribing to data updates.")
+                self.viewModel.subscribe()
+            }
+            .sheet(isPresented: self.$presentAddBookSheet){
+                BookEditView()
             }
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
