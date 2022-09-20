@@ -96,6 +96,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0397FEB28D9DF7600082597 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F07FD3DF28D504F9001DDDE3 /* Book.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F0397FEC28D9DF7F00082597 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F0B9F56328D8805600A1A188 /* BookDetailsView.swift */,
+				F07FD3A628D4FD3F001DDDE3 /* ContentView.swift */,
+				F0B9F56528D8854A00A1A188 /* BookEditView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F0397FED28D9DF8700082597 /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				F0B9F56728D8878900A1A188 /* BookViewModel.swift */,
+				F0B9F56128D877D100A1A188 /* BooksViewModel.swift */,
+			);
+			path = "view model";
+			sourceTree = "<group>";
+		};
 		F07FD39828D4FD3F001DDDE3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,19 +146,16 @@
 		F07FD3A328D4FD3F001DDDE3 /* Project Register Unipar */ = {
 			isa = PBXGroup;
 			children = (
+				F0397FED28D9DF8700082597 /* view model */,
+				F0397FEC28D9DF7F00082597 /* view */,
+				F0397FEB28D9DF7600082597 /* model */,
 				F07FD3A428D4FD3F001DDDE3 /* Project_Register_UniparApp.swift */,
-				F07FD3A628D4FD3F001DDDE3 /* ContentView.swift */,
-				F07FD3A828D4FD3F001DDDE3 /* Assets.xcassets */,
 				F07FD3AD28D4FD3F001DDDE3 /* Persistence.swift */,
+				F07FD3A828D4FD3F001DDDE3 /* Assets.xcassets */,
 				F07FD3B228D4FD3F001DDDE3 /* Info.plist */,
 				F07FD3D428D500CD001DDDE3 /* GoogleService-Info.plist */,
 				F07FD3AF28D4FD3F001DDDE3 /* Project_Register_Unipar.xcdatamodeld */,
 				F07FD3AA28D4FD3F001DDDE3 /* Preview Content */,
-				F07FD3DF28D504F9001DDDE3 /* Book.swift */,
-				F0B9F56128D877D100A1A188 /* BooksViewModel.swift */,
-				F0B9F56328D8805600A1A188 /* BookDetailsView.swift */,
-				F0B9F56528D8854A00A1A188 /* BookEditView.swift */,
-				F0B9F56728D8878900A1A188 /* BookViewModel.swift */,
 			);
 			path = "Project Register Unipar";
 			sourceTree = "<group>";
