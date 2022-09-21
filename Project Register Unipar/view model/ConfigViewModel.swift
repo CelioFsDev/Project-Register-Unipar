@@ -1,5 +1,5 @@
 //
-//  BooksViewModel.swift
+//  RegistersViewModel.swift
 //  Project Register Unipar
 //
 //  Created by Celio Ferreira on 19/09/22.
@@ -9,8 +9,8 @@ import Foundation
 import Combine
 import FirebaseFirestore
 
-class BooksViewModel: ObservableObject {
-    @Published var books = [Book]()
+class ConfigViewModel: ObservableObject {
+    @Published var registers = [Register]()
     
     private var db = Firestore.firestore()
     private var listenerRegistration: ListenerRegistration?
@@ -26,13 +26,13 @@ class BooksViewModel: ObservableObject {
     }
     func subscribe(){
         if listenerRegistration == nil {
-            listenerRegistration = db.collection("books").addSnapshotListener{(querySnapshot, error) in
+            listenerRegistration = db.collection("registros").addSnapshotListener{(querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
                     print("No documentes")
                     return
                 }
                 
-                self.books = documents.compactMap{querySnapshot in try? querySnapshot.data(as: Book.self)
+                self.registers = documents.compactMap{querySnapshot in try? querySnapshot.data(as: Register.self)
                     
                 }
             }
@@ -40,11 +40,11 @@ class BooksViewModel: ObservableObject {
     }
     
     
-    func removeBooks(atOffsets indexSet: IndexSet){
-        let books = indexSet.lazy.map { self.books[$0]}
-        books.forEach { book in
-            if let documenteId = book.id {
-                db.collection ("books").document(documenteId).delete {
+    func removeRegisters(atOffsets indexSet: IndexSet){
+        let registers = indexSet.lazy.map { self.registers[$0]}
+        registers.forEach { register in
+            if let documenteId = register.id {
+                db.collection ("registros").document(documenteId).delete {
                     error in if let error = error {
                         print("Unable to remove document: \(error.localizedDescription)")
                     }

@@ -1,5 +1,5 @@
 //
-//  BookEditView.swift
+//  RegisterEditView.swift
 //  Project Register Unipar
 //
 //  Created by Celio Ferreira on 19/09/22.
@@ -18,23 +18,23 @@ enum Action {
     case cancel
 }
 
-struct BookEditView: View {
+struct RegisterEditView: View {
     
     @Environment(\.presentationMode) private var presentationMode
     @State var presentActionSheet = false
     
-    @ObservedObject var viewModel = Book1ViewModel()
+    @ObservedObject var viewModel = RegisterViewModel()
     var mode: Mode = .new
     var completionHandler: ( (Result<Action, Error>) -> Void)?
     
     var cancelButton: some View {
         Button(action: {self.handleDoneTapped() }) {
-            Text("Cancel")
+            Text("Cancelar")
         }
     }
     var saveButton: some View {
         Button(action: {self.handleDoneTapped()}) {
-            Text(mode == .new ? "Done" : "Save")
+            Text(mode == .new ? "Cadastrar" : "Salvar")
         }
         .disabled(!viewModel.modified)
     }
@@ -42,18 +42,19 @@ struct BookEditView: View {
     var body: some View {
         NavigationView{
             Form {
-                Section(header: Text("Book")){
-                    TextField("Title", text: $viewModel.book.title)
-                    TextField("Number of pages", value: $viewModel.book.numberOfPages, formatter: NumberFormatter())
+                Section(header: Text("Produtos")){
+                    TextField("Produto", text: $viewModel.register.title)
+                    
                 }
-                Section(header: Text("Author")){
-                    TextField("Author", text: $viewModel.book.author)
+                Section(header: Text("Fornecedor")){
+                    TextField("Fornecedor", text: $viewModel.register.fornecedor)
+                    TextField("Telefone", text: $viewModel.register.phone)
                 }
-                Section(header: Text("Photo")) {
-                    TextField("Image", text: $viewModel.book.image)
+                Section(header: Text("Foto do Produto")) {
+                   // TextField("Imagem do Produto", text: $viewModel.register.image)
                 }
                 if mode == .edit {
-                    TextField("Image", text: $viewModel.book.image)
+                    TextField("Image", text: $viewModel.register.image)
                 }
                 if mode == .edit {
                     Section {
@@ -62,8 +63,11 @@ struct BookEditView: View {
                     }
                 }
             }
-            .navigationTitle(mode == .new ? "New book" : viewModel		.book.title)
-            .navigationBarTitleDisplayMode(mode == .new ? .inline : .large)
+            .navigationTitle(mode == .new ?
+                             "Novo Registro" : viewModel.register.title)
+            .navigationBarTitleDisplayMode(
+                mode == .new ?
+                    .inline : .large)
             .navigationBarItems(
                 leading: cancelButton,
                 trailing: saveButton
@@ -72,7 +76,9 @@ struct BookEditView: View {
                 ActionSheet(title: Text("Tem certeza disso"),
                             buttons: [
                                 .destructive(Text("Deletar"),
-                                             action: {self.handleDeleteTapped() }),
+                                             action: {self.handleDeleteTapped()
+                                                 
+                                             }),
                                 .cancel()
                             ])
             }
@@ -100,8 +106,8 @@ struct BookEditView: View {
     }
 }
 
-struct BookEditView_Previews: PreviewProvider {
+struct RegisterEditView_Previews: PreviewProvider {
     static var previews: some View {
-        BookEditView()
+        RegisterEditView()
     }
 }

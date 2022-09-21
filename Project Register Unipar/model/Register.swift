@@ -1,5 +1,5 @@
 //
-//  Book.swift
+//  Register.swift
 //  Project Register Unipar
 //
 //  Created by Celio Ferreira on 16/09/22.
@@ -8,19 +8,19 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct Book: Identifiable, Codable {
+struct Register: Identifiable, Codable {
     
     @DocumentID var id: String?
     var title: String
-    var author: String
-    var numberOfPages: Int
+    var fornecedor: String
+    var phone: String
     var image: String
     
     enum CodingKeys: String, CodingKey {
         case id
         case title
-        case author
-        case numberOfPages = "pages"
+        case fornecedor
+        case phone 
         case image
     }
 }

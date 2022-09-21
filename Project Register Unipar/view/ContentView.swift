@@ -8,26 +8,28 @@
 import SwiftUI
 import CoreData
 import Firebase
+import SDWebImageSwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = BooksViewModel()
-    @State var presentAddBookSheet = false
+    @StateObject var viewModel = ConfigViewModel()
+    @State var presentAddRegisterSheet = false
     
     private var addButton: some View {
-        Button(action: {self.presentAddBookSheet.toggle()}) {
+        Button(action: {self.presentAddRegisterSheet.toggle()}) {
             Image(systemName: "plus")
         }
+        
     }
-    private func bookRowView(book: Book) -> some View {
-        NavigationLink(destination: BookDetailsView(book: book)) {
+    private func registerRowView(register: Register) -> some View {
+        NavigationLink(destination: RegisterDetailsView(register: register)) {
             VStack(alignment: .leading){
                 HStack{
-//                    AnimatedImage(url: URL(string: book.image)!).resizable().frame(width: 65, heigth: 65).clipShape(Circle())
+                    AnimatedImage(url: URL(string: register.image)).resizable().frame(width: 65, height: 65).clipShape(Circle())
                     VStack(alignment: .leading) {
-                        Text(book.title)
+                        Text(register.title)
                             .fontWeight(.bold)
-                        Text(book.author)
+                        Text(register.fornecedor)
                     }
                 }
             }
@@ -38,19 +40,19 @@ struct ContentView: View {
     var body: some View{
         NavigationView{
             List{
-                ForEach(viewModel.books) {
-                    book in bookRowView(book: book)
+                ForEach(viewModel.registers) {
+                    register in registerRowView(register: register)
                     
                 }
             }
-            .navigationBarTitle("Books")
+            .navigationBarTitle("Cadastros")
             .navigationBarItems(trailing: addButton)
             .onAppear() {
                 print("BooksListeView appears. Subscribing to data updates.")
                 self.viewModel.subscribe()
             }
-            .sheet(isPresented: self.$presentAddBookSheet){
-                BookEditView()
+            .sheet(isPresented: self.$presentAddRegisterSheet){
+                RegisterEditView()
             }
         }
     }
