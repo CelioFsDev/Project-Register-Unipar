@@ -10,6 +10,7 @@ import Combine
 import FirebaseFirestore
 
 class ConfigViewModel: ObservableObject {
+    
     @Published var registers = [Register]()
     
     private var db = Firestore.firestore()
@@ -26,8 +27,10 @@ class ConfigViewModel: ObservableObject {
     }
     func subscribe(){
         if listenerRegistration == nil {
-            listenerRegistration = db.collection("registros").addSnapshotListener{(querySnapshot, error) in
-                guard let documents = querySnapshot?.documents else {
+            listenerRegistration = db.collection("registros").addSnapshotListener{(
+                querySnapshot, error) in
+                guard let documents = querySnapshot?.documents
+                else {
                     print("No documentes")
                     return
                 }
@@ -52,6 +55,4 @@ class ConfigViewModel: ObservableObject {
             }
         }
     }
-    
-    
 }

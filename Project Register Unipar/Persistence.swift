@@ -27,7 +27,6 @@ struct PersistenceController {
         }
         return result
     }()
-
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {

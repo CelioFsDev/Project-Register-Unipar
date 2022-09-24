@@ -16,7 +16,6 @@ struct Project_Register_UniparApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                
         }
     }
 }
@@ -26,6 +25,5 @@ class AppDelegate: NSObject, UIApplicationDelegate{
         
         FirebaseApp.configure()
         return true
-        
     }
 }

@@ -51,7 +51,7 @@ struct RegisterEditView: View {
                     TextField("Telefone", text: $viewModel.register.phone)
                 }
                 Section(header: Text("Foto do Produto")) {
-                   // TextField("Imagem do Produto", text: $viewModel.register.image)
+                   //TextField("Imagem do Produto", text: $viewModel.register.image)
                 }
                 if mode == .edit {
                     TextField("Image", text: $viewModel.register.image)

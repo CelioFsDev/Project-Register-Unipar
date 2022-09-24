@@ -25,7 +25,8 @@ struct ContentView: View {
         NavigationLink(destination: RegisterDetailsView(register: register)) {
             VStack(alignment: .leading){
                 HStack{
-                    AnimatedImage(url: URL(string: register.image)).resizable().frame(width: 65, height: 65).clipShape(Circle())
+                    AnimatedImage(url: URL(string: register.image)).resizable().frame(
+                        width: 65, height: 65).clipShape(Circle())
                     VStack(alignment: .leading) {
                         Text(register.title)
                             .fontWeight(.bold)

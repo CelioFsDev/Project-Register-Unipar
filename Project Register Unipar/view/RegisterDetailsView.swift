@@ -25,13 +25,11 @@ struct RegisterDetailsView: View {
         Form {
             Section(header: Text("Produtos")){
                 Text(register.title)
-                
             }
             Section(header: Text("Fornecedor")) {
                 Text(register.fornecedor)
                 Text("\(register.phone)")
             }
-            
         }
         .navigationTitle(register.title)
         .navigationBarItems(trailing: editButton {
@@ -54,7 +52,6 @@ struct RegisterDetailsView: View {
             }
         }
     }
-    
     struct RegisterDetailsView_Previews: PreviewProvider {
         static var previews: some View {
             let register = Register(title: "Cadastros", fornecedor: "Fornecedor", phone: "62-996046531", image: "https://imgnike-a.akamaihd.net/1300x1300/013635ID.jpg")

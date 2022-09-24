@@ -16,7 +16,11 @@ class RegisterViewModel: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
-    init(register: Register = Register(title: "", fornecedor: "", phone: "", image: "")){
+    init(register: Register = Register(
+        title: "",
+        fornecedor: "",
+        phone: "", image:""
+    )){
         self.register = register
         
         self.$register

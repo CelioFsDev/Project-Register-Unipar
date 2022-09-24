@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 struct Register: Identifiable, Codable {
     
     @DocumentID var id: String?
+    
     var title: String
     var fornecedor: String
     var phone: String
